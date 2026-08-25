@@ -1,0 +1,103 @@
+@model MVC_2026.Cliente
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+<div class="container bg-success-subtle">
+    <h1 class="text-center mt-4 fw-bold rounded-2 text-success">Cadastro de Clientes</h1>
+    <form action="#" method="post">
+        <div class="row">
+            <!--  Código  -->
+            <div class="col-12 col-md-4 col-lg-3 mt-3">
+                <label asp-for="Id">Código</label>
+                <input type="number" class="form-control" placeholder="Código do Cliente" 
+                asp-for="Id">
+            </div>
+
+            <!--  Nome  -->
+            <div class="col-12 col-md-8 col-lg-9 mt-3">
+                <label asp-for="Nome">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Nome Completo..." 
+                asp-for="Nome">
+            </div>
+
+            <!--  Endereço  -->
+            <div class="col-12 col-md-9 col-lg-10 mt-3">
+                <label asp-for="Endereco">Endereço</label>
+                <input type="text" class="form-control" placeholder="Endereço" 
+                asp-for="Endereco">
+            </div>
+
+            <!--  CEP  -->
+            <div class="col-12 col-md-3 col-lg-2 mt-3">
+                <label asp-for="CEP">CEP</label>
+                <input type="text" class="form-control" placeholder="CEP" 
+                asp-for="CEP">
+            </div>
+
+            <!-- Bairro  -->
+            <div class="col-12 col-md-4 mt-3">
+                <label asp-for="Bairro">Bairro</label>
+                <input type="text" class="form-control" placeholder="Bairro" 
+                asp-for="Bairro">
+            </div>
+
+            <!--  Cidade  -->
+            <div class="col-12 col-md-4 mt-3">
+                <label asp-for="Cidade">Cidade</label>
+                <input type="text" class="form-control" placeholder="Cidade" 
+                asp-for="Cidade">
+            </div>
+
+            <!--  UF  -->
+            <div class="col-12 col-md-12 col-lg-4 mt-3">
+                <label asp-for="UF">UF</label>
+                <input type="text" class="form-control" placeholder="Unidade Federativa" 
+                asp-for="UF">
+            </div>
+
+            <!--  CPF  -->
+            <div class="col-12 mt-3">
+                <label asp-for="CPF">CPF</label>
+                <input type="text" class="form-control" placeholder="CPF" 
+                asp-for="CPF">
+            </div>
+
+            <!--  Email  -->
+            <div class="col-12 mt-3">
+                <label asp-for="Email">Email</label>
+                <input type="text" class="form-control" placeholder="Email" 
+                asp-for="Email">
+            </div>
+
+            <!--  Celular  -->
+            <div class="col-12 col-md-8 mt-3">
+                <label asp-for="Celular">Celular</label>
+                <input type="text" class="form-control" placeholder="(00)000.000.000" 
+                asp-for="Celular">
+            </div>
+
+            <!--  Data Nascimento  -->
+            <div class="col-12 col-md-4 mt-3">
+                <label asp-for="DataNascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" placeholder="dia/mes/ano" 
+                asp-for="DataNascimento">
+            </div>
+            <!--  Observacao -->
+            <div class="row mt-3">
+                <label asp-for="Observacao">Observação:</label>
+                <textarea 
+                    class="text" class="form-control" placeholder="Digite alguma Observação" >
+                </textarea>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col text-center">
+                <input type="reset" value="Limpar" class="w-50 btn-outline-secondary"/>
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar" class="w-50 btn btn-outline-success "/>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,35 @@
+html[b-xgzyt4advp] {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html[b-xgzyt4advp] {
+    font-size: 16px;
+  }
+}
+
+.btn:focus[b-xgzyt4advp], .btn:active:focus[b-xgzyt4advp], .btn-link.nav-link:focus[b-xgzyt4advp], .form-control:focus[b-xgzyt4advp], .form-check-input:focus[b-xgzyt4advp] {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html[b-xgzyt4advp] {
+  position: relative;
+  min-height: 100%;
+}
+
+body[b-xgzyt4advp] {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext[b-xgzyt4advp]::placeholder, .form-floating > .form-control[b-xgzyt4advp]::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus[b-xgzyt4advp]::placeholder, .form-floating > .form-control:focus[b-xgzyt4advp]::placeholder {
+  text-align: start;
+}
+
+.h-150[b-xgzyt4advp]{
+  height:150px;
+}
